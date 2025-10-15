@@ -1,0 +1,179 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  touch-action: pan-x pan-y;
+  user-scalable: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body, html {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a {
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'JetBrains Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.container {
+  max-width: 420px;
+  width: 100%;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px 22px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.file-entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 11px 0;
+}
+
+.file-entry:last-child {
+  border-bottom: none;
+}
+
+.file-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  gap: 20px;
+}
+
+.file-sub {
+  color: #555;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.lib-link {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #000;
+  text-underline-offset: 2px;
+}
+
+.lib-link:hover {
+  opacity: 0.7;
+}
+
+.download-btn {
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 5px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.download-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 12px;
+  color: #777;
+  font-size: 0.75rem;
+  user-select: none;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-link {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #000;
+  text-underline-offset: 2px;
+}
+
+.footer-link:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 24px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 16px 18px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .file-header {
+    gap: 14px;
+  }
+
+  .file-entry {
+    padding: 9px 0;
+  }
+
+  .file-header span {
+    font-size: 0.85rem;
+  }
+
+  .download-btn {
+    font-size: 0.75rem;
+    padding: 4px 9px;
+  }
+
+  .footer {
+    margin-top: 10px;
+    font-size: 0.7rem;
+  }
+}
